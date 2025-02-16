@@ -1,0 +1,5 @@
+{
+  "mongo_uri": "mongodb://dolphin:10deagostO@localhost:27017/",
+  "database_name": "clientsDB",
+  "collection_name": "clients"
+}
