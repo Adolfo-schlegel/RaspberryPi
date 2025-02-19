@@ -1,5 +1,9 @@
 {
   "mongo_uri": "mongodb://dolphin:10deagostO@localhost:27017/",
   "database_name": "clientsDB",
-  "collection_name": "clients"
+  "collection_name": "clients",
+  "api_url": "http://192.168.0.22:5000/Sync",
+  "id_building" : 1,
+  "log_file": "access_log.txt",
+  "transmitter": "Door1"
 }

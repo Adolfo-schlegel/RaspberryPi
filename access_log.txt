@@ -1,0 +1,4 @@
+2025-02-19 09:43:05,511 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-19 09:43:09,823 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-19 09:43:15,336 - User 62FDAD51 - Access Granted - Door 2
+2025-02-19 09:43:20,349 - User 62CE1051 - Access Granted - Door 2
