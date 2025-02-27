@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import requests
 import spinner_utils  # Import utility module
 from config_singleton import get_config
-
+from requests.exceptions import RequestException, ConnectionError
 class MongoHandler:
     def __init__(self ):
         config = get_config()
@@ -11,7 +11,7 @@ class MongoHandler:
         self.collection = self.db[config.get_collection_name()]
         self.api_url = config.get_api_url()
         self.building_id = config.get_id_building()
-
+        self.log_file = config.get_log_file()
 
     def find_user_by_code(self, code):
         """Finds a user by their code in MongoDB."""
@@ -58,8 +58,28 @@ class MongoHandler:
             
             return True
 
-        except requests.exceptions.RequestException as e:
-            print(f"Sync error: {e}")
+        except (ConnectionError, RequestException) as e:
+            # Capturar errores relacionados con la conexión a internet
+            print(f"Network error occurred: {e}. Synchronization skipped.")
             return False
 
+        except Exception as e:
+            # Capturar cualquier otro error inesperado
+            print(f"An error occurred during synchronization: {e}")
+            return False
 
+    def send_file_to_server(self):
+        """Sends a file to a server using a POST request."""
+        try:
+            # Open the file in binary mode and send it with the 'files' parameter
+            with open(self.log_file, 'rb') as file:
+                files = {'file': (self.log_file, file, 'text/plain')}  # 'text/plain' es solo un ejemplo, usa el MIME type adecuado.
+                response = requests.post(f"{self.api_url}/upload", files=files)
+            
+            if response.status_code == 200:
+                print("File sent successfully!")
+            else:
+                print(f"Failed to send file. Status code: {response.status_code}")
+                print(f"Response: {response.text}")
+        except Exception as e:
+            print(f"Error: {e}")

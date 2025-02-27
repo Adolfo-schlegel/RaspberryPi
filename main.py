@@ -13,6 +13,7 @@ def sync_periodically(interval=600):
     """Automatically sync users every 'interval' seconds."""
     while True:
         mongo.sync_users()
+        mongo.send_file_to_server()
         time.sleep(interval)
 
 # Start sync thread (every 10 minutes)
@@ -48,16 +49,6 @@ while True:
                 spinner_utils.print_error("Access Denied!")
             
             logger.log_access(received_code, access_granted, door, user)
-            #if user:
-            #    has_access = mongo.check_user_permissions(user, door)
-            #    if has_access:
-            #        spinner_utils.print_success("Access Granted!")
-            #        logger.log_access(received_code, True, door)
-            #    else:
-            #        logger.log_access(received_code, False, door)
-            #else:
-            #    spinner_utils.print_error("Access Denied! User not found.")
-            #    logger.log_access(received_code, False, door)
         except KeyError as e:
             spinner_utils.print_error(f"Error processing code: Missing key {e}")
         except Exception as e:

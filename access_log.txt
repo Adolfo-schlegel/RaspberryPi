@@ -2,3 +2,29 @@
 2025-02-19 09:43:09,823 - User 72164151 - Access Denied (No Access to Door) - Door 2
 2025-02-19 09:43:15,336 - User 62FDAD51 - Access Granted - Door 2
 2025-02-19 09:43:20,349 - User 62CE1051 - Access Granted - Door 2
+2025-02-19 10:02:48,609 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-19 10:02:52,418 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-19 10:03:17,464 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-19 10:05:57,232 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-19 10:06:01,943 - User 62FDAD51 - Access Granted - Door 2
+2025-02-25 09:23:01,969 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-25 09:23:29,915 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-25 09:23:41,837 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-25 09:23:43,946 - User 62FDAD51 - Access Granted - Door 2
+2025-02-25 09:23:48,358 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-25 09:23:51,564 - User 62CE1051 - Access Granted - Door 2
+2025-02-25 09:24:20,708 - User 62FDAD51 - Access Granted - Door 2
+2025-02-25 09:24:35,637 - User 62CE1051 - Access Granted - Door 2
+2025-02-25 09:25:19,614 - User 7268F651 - Access Denied (User Not Found) - Door 2
+2025-02-27 12:44:24,502 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-27 12:44:38,428 - User 7268F651 - Access Denied (User Not Found) - Door 2
+2025-02-27 12:59:06,728 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-27 12:59:15,345 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-27 12:59:18,954 - User E79C774B - Access Denied (User Not Found) - Door 2
+2025-02-27 13:17:45,204 - User 62CE1051 - Access Granted - Door 2
+2025-02-27 13:39:29,584 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-27 13:42:26,134 - User 72164151 - Access Denied (No Access to Door) - Door 2
+2025-02-27 13:42:28,642 - User 7268F651 - Access Denied (User Not Found) - Door 2
+2025-02-27 13:42:31,251 - User 62FDAD51 - Access Granted - Door 2
+2025-02-27 13:43:20,425 - User 62FDAD51 - Access Granted - Door 2
+2025-02-27 16:20:44,513 - User 62CE1051 - Access Granted - Door 2
